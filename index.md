@@ -15,7 +15,7 @@ Deploy and manage a simple Apache (`httpd`) web application using Kubernetes.
 kubectl cluster-info
 ```
 
-![Cluster Info](screenshots/image 1.png)
+![Cluster Info](screenshots/image1.png)
 
 ---
 
@@ -29,7 +29,7 @@ kubectl run apache-pod --image=httpd
 kubectl get pods
 ```
 
-![Run Pod](screenshots/image 2.png)
+![Run Pod](screenshots/image2.png)
 
 ---
 
@@ -39,7 +39,7 @@ kubectl get pods
 kubectl describe pod apache-pod
 ```
 
-![Describe Pod](screenshots/image 3.png)
+![Describe Pod](screenshots/image3.png)
 
 ---
 
@@ -55,7 +55,7 @@ Open:
 http://localhost:8081
 ```
 
-![App Running](screenshots/image 4.png)
+![App Running](screenshots/image4.png)
 
 ---
 
@@ -66,7 +66,7 @@ kubectl delete pod apache-pod
 kubectl get pods
 ```
 
-![Delete Pod](screenshots/image 5.png)
+![Delete Pod](screenshots/image5.png)
 
 ---
 
@@ -78,7 +78,7 @@ kubectl get deployments
 kubectl get pods
 ```
 
-![Deployment](screenshots/image 6.png)
+![Deployment](screenshots/image6.png)
 
 ---
 
@@ -95,7 +95,7 @@ Open:
 http://localhost:8082
 ```
 
-![Expose Service](screenshots/image 7.png)
+![Expose Service](screenshots/image7.png)
 
 ---
 
@@ -106,7 +106,7 @@ kubectl scale deployment apache --replicas=2
 kubectl get pods
 ```
 
-![Scaling](screenshots/image 8.png)
+![Scaling](screenshots/image8.png)
 
 ---
 
@@ -117,7 +117,7 @@ kubectl set image deployment/apache httpd=wrongimage
 kubectl get pods
 ```
 
-![Break App](screenshots/image 9.png)
+![Break App](screenshots/image9.png)
 
 ---
 
@@ -127,7 +127,7 @@ kubectl get pods
 kubectl describe pod <pod-name>
 ```
 
-![Diagnose](screenshots/image 10.png)
+![Diagnose](screenshots/image10.png)
 
 ---
 
@@ -138,7 +138,7 @@ kubectl set image deployment/apache httpd=httpd
 kubectl get pods
 ```
 
-![Fix](screenshots/image 11.png)
+![Fix](screenshots/image11.png)
 
 ---
 
@@ -150,7 +150,7 @@ ls /usr/local/apache2/htdocs
 exit
 ```
 
-![Exec](screenshots/image 12.png)
+![Exec](screenshots/image12.png)
 
 ---
 
